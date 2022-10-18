@@ -4,10 +4,33 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title></title>
+	<link rel="stylesheet" href="navagation.css"/>
+	<style type="text/css">
+		body{
+			background-color: pink;
+		}
+		.page{
+			border: 1px solid green;
+			width: 10%;
+			padding: 5%;
+			margin-left: 35%;
+			border-radius: 4%;
+		}
+		.btn-submit{
+			background-color: orange;
+			color: blue;
+
+		}
+	</style>
 </head>
 <body>
-	
-	<form action="login.html">
+	<nav class="navbar">
+		<a href="index.html">Register</a>
+		<a href="login.html">login</a>
+		<a href="savi.html">Biography</a>
+		<a href="photos.html">Photos</a>
+	</nav>
+	<form  class="page" action="login.html">
 		<center><h2>Registration page</h2></center>
 		<p><input placeholder="Enter name" type="text" required /></p>
 		<p><input placeholder="Enter email address" type="email"/></p>
@@ -26,9 +49,10 @@
 		</p>
 		<p><input type="file"/></p>
 		<p>
-			<button>submit</button>
+			<button class="btn-submit">submit</button>
             <input type="reset">
 		</p>
+
 	</form>
 
 
